@@ -12,7 +12,7 @@ namespace BusinessLayer
         protected static BaseData ExtraDataManager = new BaseData(DbServiceContainer<MySqlDbService>.Service);
         static PaymentExtraDetailManager()
         {
-            TableName = "tblPaymentExtra";
+            TableName = "tblPaymentExtraDetail";
             ManagerName = "PaymentExtraDetailManager";
         }
 

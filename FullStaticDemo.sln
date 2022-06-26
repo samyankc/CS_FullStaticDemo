@@ -4,10 +4,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullStaticDemo", "FullStaticDemo\FullStaticDemo.csproj", "{754E76DC-766A-4C14-96C3-88ABE15C24A5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{20615E83-99EC-4E9A-A65B-B15F49A9A759} = {20615E83-99EC-4E9A-A65B-B15F49A9A759}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{20615E83-99EC-4E9A-A65B-B15F49A9A759}"
+	ProjectSection(ProjectDependencies) = postProject
+		{032EEEBB-511D-413C-95A7-274F8C63124A} = {032EEEBB-511D-413C-95A7-274F8C63124A}
+		{FABBE276-4BA6-42C6-AC65-D8749174DA70} = {FABBE276-4BA6-42C6-AC65-D8749174DA70}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{032EEEBB-511D-413C-95A7-274F8C63124A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FABBE276-4BA6-42C6-AC65-D8749174DA70} = {FABBE276-4BA6-42C6-AC65-D8749174DA70}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{FABBE276-4BA6-42C6-AC65-D8749174DA70}"
 EndProject

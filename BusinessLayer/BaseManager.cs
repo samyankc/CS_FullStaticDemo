@@ -20,10 +20,10 @@ namespace BusinessLayer
 
         public static string GetValue(int userKey, string columnName)
         {
-            var dt = DataManager.GetList($"select {columnName} from {TableName} where userPkey='{userKey}'"); 
-            
+            var dt = DataManager.GetList($"select {columnName} from {TableName} where userPkey='{userKey}'");
+
             Console.WriteLine($"By {ManagerName}, {DataManager.ServiceName()}\t| Get Result of [{userKey}][{columnName}] from [{TableName}]");
-            
+
             return "";
         }
 
@@ -38,7 +38,7 @@ namespace BusinessLayer
             var result = DataManager.Update(new DataTable());
 
             Console.WriteLine($"By {ManagerName}, {DataManager.ServiceName()}\t| Set {newValue} => [{userKey}][{columnName}] from [{TableName}] | {(result ? "Success" : "Failure")}");
-            
+
             return result;
         }
 

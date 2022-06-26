@@ -4,13 +4,17 @@ using System.Linq;
 
 namespace BusinessLayer
 {
+    public class PaymentManager : PaymentManager_<PaymentManager>{}
+
     public class PaymentManager_<CRTP> : BaseManager<PaymentManager_<CRTP>>
     {
         static PaymentManager_()
         {
             TableName = "tblPayment";
             ManagerName = "PaymentManager";
-            typeof(CRTP).TypeInitializer?.Invoke(null, null);
+
+            // uncomment the following line to pass unit test
+            // typeof(CRTP).TypeInitializer?.Invoke(null, null);
         }
 
         public static List<string> GetTransactionIDs(int userPkey)
@@ -23,5 +27,4 @@ namespace BusinessLayer
         }
     }
 
-    public class PaymentManager : PaymentManager_<PaymentManager>{}
 }
