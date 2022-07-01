@@ -5,7 +5,7 @@ using System.Linq;
 namespace BusinessLayer
 {
     public class PaymentManager : PaymentManager_<PaymentManager>{}
-
+    
     public class PaymentManager_<CRTP> : BaseManager<PaymentManager_<CRTP>>
     {
         static PaymentManager_()
@@ -14,7 +14,7 @@ namespace BusinessLayer
             ManagerName = "PaymentManager";
 
             // uncomment the following line to pass unit test
-            // typeof(CRTP).TypeInitializer?.Invoke(null, null);
+            // Activator.CreateInstance<CRTP>();
         }
 
         public static List<string> GetTransactionIDs(int userPkey)

@@ -7,8 +7,10 @@ namespace FullStaticDemo
 
     public class Program
     {
+
         public static void Main(string[] args)
         {
+
             int userPkey = 123321;
             int userPkey2 = 987654;
             

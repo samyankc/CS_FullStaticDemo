@@ -15,7 +15,7 @@ namespace BusinessLayer
 
         static BaseManager()
         {
-            typeof(CRTP).TypeInitializer?.Invoke(null, null);
+            Activator.CreateInstance<CRTP>();
         }
 
         public static string GetValue(int userKey, string columnName)
@@ -43,4 +43,5 @@ namespace BusinessLayer
         }
 
     }
+
 }

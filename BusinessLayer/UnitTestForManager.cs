@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Reflection;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BusinessLayer
@@ -33,5 +35,8 @@ namespace BusinessLayer
             Assert.AreEqual("tblPayment", PaymentManager.TableName);
             Assert.AreEqual("PaymentManager", PaymentManager.ManagerName);
         }
+
     }
 }
+
+
